@@ -1,0 +1,17 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore build artifacts
+dist/
+projects/your-library-name/dist/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore environment files
+.env
+
+# Ignore Angular cache
+.cache/
+.angular/

@@ -1,0 +1,12 @@
+<div class="kanban-app">
+  <header>
+    <h1>Kanban Test App</h1>
+  </header>
+
+  
+  <lib-kanban-board
+    [board]="board"
+    (cardClick)="onCardClick($event)"
+    (cardMoved)="onCardMoved($event)">
+  </lib-kanban-board>
+</div>

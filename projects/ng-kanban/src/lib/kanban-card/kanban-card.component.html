@@ -1,0 +1,32 @@
+<!-- Card Id is Set to the card, 
+  on drag start emit the event which emit which card is dragging and there source and target source
+  Click event emit which card is clicked and emit that card details  -->
+
+  <div
+  class="kanban-card"
+  [attr.data-id]="card.id"
+  draggable="true"
+  (dragstart)="onDragStart($event)"
+  (click)="cardClick.emit(card)"
+>
+  <!-- Projected content for the card header -->
+  <ng-content select="[card-header]"></ng-content>
+
+  <!-- Default card title (if no custom header is provided) -->
+  @if (!hasCustomHeader) {
+    <div class="card-title">{{ card.title }}</div>
+  }
+
+  <!-- Projected content for the card body -->
+  <ng-content select="[card-body]"></ng-content>
+
+  <!-- Default card description (if no custom body is provided) -->
+  @if (!hasCustomBody && card.description) {
+    <div class="card-description">
+      {{ card.description }}
+    </div>
+  }
+
+  <!-- Projected content for the card footer -->
+  <ng-content select="[card-footer]"></ng-content>
+</div>

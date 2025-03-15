@@ -1,0 +1,9 @@
+<div class="kanban-board">
+  @for (column of board.columns; track column.id) {
+    <lib-kanban-column
+      [column]="column"
+      (cardClick)="cardClick.emit($event)"
+      (cardMoved)="onCardMoved($event)">
+    </lib-kanban-column>
+  }
+</div>

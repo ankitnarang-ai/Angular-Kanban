@@ -1,0 +1,82 @@
+/* Base card styles */
+.kanban-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+}
+
+/* Hover effect */
+.kanban-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card title */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+/* Card description */
+.card-description {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Custom header styles */
+::ng-deep [card-header] {
+  font-size: 20px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+/* Custom body styles */
+::ng-deep [card-body] {
+  font-size: 14px;
+  color: #444444;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Custom footer styles */
+::ng-deep [card-footer] {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Button styles (for custom footer) */
+::ng-deep [card-footer] button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+::ng-deep [card-footer] button:hover {
+  background-color: #0056b3;
+}
+
+/* Drag and drop feedback */
+.kanban-card[draggable="true"] {
+  user-select: none;
+}
+
+.kanban-card[draggable="true"]:active {
+  opacity: 0.7;
+}

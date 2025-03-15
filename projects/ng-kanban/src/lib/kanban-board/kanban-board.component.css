@@ -1,0 +1,31 @@
+/* Base board styles */
+.kanban-board {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 16px;
+  height: 100%;
+  min-height: 400px;
+  background-color: #f8f9fa; /* Light gray background for the board */
+  gap: 16px; /* Spacing between columns */
+  border-radius: 12px; /* Rounded corners for the board */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Scrollbar styling (optional) */
+.kanban-board::-webkit-scrollbar {
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+.kanban-board::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray track */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.kanban-board::-webkit-scrollbar-thumb {
+  background: #007bff; /* Blue scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.kanban-board::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker blue on hover */
+}

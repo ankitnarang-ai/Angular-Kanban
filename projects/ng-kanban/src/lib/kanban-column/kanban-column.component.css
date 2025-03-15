@@ -1,0 +1,69 @@
+/* Base column styles */
+.kanban-column {
+  background-color: #ffffff; /* White background for a clean look */
+  border-radius: 8px; /* Slightly larger border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 280px;
+  min-width: 280px;
+  margin-right: 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+}
+
+/* Column header */
+.column-header {
+  padding: 12px 16px; /* Increased padding for better spacing */
+  border-bottom: 2px solid #007bff; /* Thicker border with a blue color */
+  background-color: #f8f9fa; /* Light gray background for the header */
+  border-top-left-radius: 8px; /* Match the column's border radius */
+  border-top-right-radius: 8px;
+}
+
+.column-header h3 {
+  margin: 0;
+  font-size: 18px; /* Slightly larger font size */
+  font-weight: 600; /* Bold font for emphasis */
+  color: #333333; /* Dark gray for better readability */
+}
+
+/* Column content */
+.column-content {
+  padding: 12px; /* Increased padding for better spacing */
+  flex: 1;
+  margin: 2px;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  background-color: #ffffff; /* White background for content area */
+  border-bottom-left-radius: 8px; /* Match the column's border radius */
+  border-bottom-right-radius: 8px;
+}
+
+/* Drag-and-drop feedback */
+.column-content.drag-over {
+  background-color: #e3f2fd; /* Light blue background for visual feedback */
+  border: 2px dashed #007bff; /* Dashed border in blue */
+  margin: 2px;
+  border-radius: 6px; /* Slightly rounded corners for the drag-over area */
+  padding: 10px; /* Adjust padding to account for the border */
+}
+
+/* Scrollbar styling (optional) */
+.column-content::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.column-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray track */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.column-content::-webkit-scrollbar-thumb {
+  background: #007bff; /* Blue scrollbar thumb */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.column-content::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Darker blue on hover */
+}
