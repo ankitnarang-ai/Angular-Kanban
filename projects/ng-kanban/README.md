@@ -14,4 +14,4 @@ A lightweight and customizable Kanban board library for Angular applications, bu
 Install the library via npm:
 
 ```bash
-npm install ng-kanban
+npm install angular-kanban

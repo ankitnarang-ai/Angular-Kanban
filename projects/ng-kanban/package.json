@@ -18,6 +18,7 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "homepage": "https://d2kt9w63i09bb.cloudfront.net/",
   "repository": {
     "type": "git",
     "url": "https://github.com/ankitnarang-ai/Angular-Kanban"
