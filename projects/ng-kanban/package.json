@@ -1,6 +1,16 @@
 {
   "name": "angular-kanban",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "description": "A lightweight and customizable Kanban board library for Angular application",
+  "keywords": [
+    "angular-kanban",
+    "kanban-board",
+    "task-management",
+    "drag-and-drop",
+    "swimlanes",
+    "wip-validation",
+    "angular-library"
+  ],
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
@@ -8,5 +18,10 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ankitnarang-ai/Angular-Kanban"
+  },
+  "author": "Ankit Narang",
   "sideEffects": false
 }

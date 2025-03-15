@@ -2,7 +2,7 @@
 
 A lightweight and customizable Kanban board library for Angular applications, built with standalone components.
 
-![Ng-Kanban Screenshot]![kanban demo](./src/assets/kanban.demo.png)
+![kanban demo](./src/assets/kanban.demo.png)
 
 ## Features
 - Drag-and-drop functionality for cards and columns.
